@@ -1,0 +1,38 @@
+#clockcontainer{
+    margin: auto;
+    position: relative; /*by using this ,we can set positon of this element relative to other element and also use this to make the responsive, and we can set the element of this container and there is no change in the position of this element */
+    height: 40vw;
+    width: 40vw;
+    background:url(clock.png) no-repeat;
+    background-size: 100%;       /*use this property to set fully background in this element or container*/
+}
+#hour , #minute ,#second{
+    position: absolute;           /*use this property to overlap  this item to another one  */
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+                                 /* use this property to rotate the element or items from the bottom */ 
+}
+#hour{              
+    /*size in percentage of the element is relative to the size of its parent .so when you set the size of element then if we change the size of parent then the element adjust its size according to its parent*/
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;  
+}
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;  
+}
+#second{
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8; 
+    
+}
